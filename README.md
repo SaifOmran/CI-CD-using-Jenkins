@@ -29,6 +29,21 @@ The same shared library is used to build, package, dockerize, push, and deploy *
 Each application contains only a lightweight `Jenkinsfile` that calls the shared library.
 
 ---
+# GitHub Repositories
+
+## Shared Library Repository
+- [https://github.com/SaifOmran/shared-lib](https://github.com/SaifOmran/shared-lib-test)
+
+## Spring Boot Application 1
+- [https://github.com/SaifOmran/spring-petclinic-A](https://github.com/SaifOmran/spring-petclinic-A)
+
+## Spring Boot Application 2
+- [https://github.com/SaifOmran/spring-petclinic-B](https://github.com/SaifOmran/spring-petclinic-B)
+
+## Spring Boot Application 3
+- [https://github.com/SaifOmran/spring-petclinic-C](https://github.com/SaifOmran/spring-petclinic-C)
+
+---
 
 # Technologies Used
 
