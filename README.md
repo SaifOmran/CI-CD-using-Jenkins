@@ -9,7 +9,10 @@ The main goal of this project is to avoid duplicating Jenkins pipeline code acro
 The same shared library is used to build, package, dockerize, push, and deploy **3 different Spring Boot services**.
 
 ---
+# Workflow
+<img width="1536" height="1024" alt="CICD" src="https://github.com/user-attachments/assets/3495fd47-02c7-48aa-a165-72bfce8a6c8b" />
 
+---
 # Architecture
 
 ```text
