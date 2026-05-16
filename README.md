@@ -49,7 +49,7 @@ Each service contains only a lightweight `Jenkinsfile` that calls the shared lib
 ---
 
 # Technologies Used
-
+* Java 21
 * Java 17
 * Spring Boot
 * Maven
