@@ -34,13 +34,13 @@ Each application contains only a lightweight `Jenkinsfile` that calls the shared
 ## Shared Library Repository
 - [https://github.com/SaifOmran/shared-lib](https://github.com/SaifOmran/shared-lib-test)
 
-## Spring Boot Application 1
+## Spring Boot Service A
 - [https://github.com/SaifOmran/spring-petclinic-A](https://github.com/SaifOmran/spring-petclinic-A)
 
-## Spring Boot Application 2
+## Spring Boot Service B
 - [https://github.com/SaifOmran/spring-petclinic-B](https://github.com/SaifOmran/spring-petclinic-B)
 
-## Spring Boot Application 3
+## Spring Boot Service C
 - [https://github.com/SaifOmran/spring-petclinic-C](https://github.com/SaifOmran/spring-petclinic-C)
 
 ---
