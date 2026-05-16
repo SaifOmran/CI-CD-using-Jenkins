@@ -164,7 +164,7 @@ The Jenkins agent connects using SSH.
 Example remote root directory:
 
 ```text
-/home/ec2-user/jenkins
+/home/jenkins
 ```
 
 ---
