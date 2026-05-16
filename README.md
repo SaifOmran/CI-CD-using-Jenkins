@@ -2,11 +2,11 @@
 
 ## Overview
 
-This project demonstrates a complete CI/CD workflow using �entity["software","Jenkins","CI/CD automation server"] Shared Libraries for multiple Spring Boot applications.
+This project demonstrates a complete CI/CD workflow using �entity["software","Jenkins","CI/CD automation server"] Shared Libraries for multiple Spring Boot services.
 
-The main goal of this project is to avoid duplicating Jenkins pipeline code across applications by creating a reusable shared pipeline.
+The main goal of this project is to avoid duplicating Jenkins pipeline code across services by creating a reusable shared pipeline.
 
-The same shared library is used to build, package, dockerize, push, and deploy **3 different Spring Boot applications**.
+The same shared library is used to build, package, dockerize, push, and deploy **3 different Spring Boot services**.
 
 ---
 
@@ -26,7 +26,7 @@ The same shared library is used to build, package, dockerize, push, and deploy *
     Jenkinsfile             Jenkinsfile             Jenkinsfile
 ```
 
-Each application contains only a lightweight `Jenkinsfile` that calls the shared library.
+Each service contains only a lightweight `Jenkinsfile` that calls the shared library.
 
 ---
 # GitHub Repositories
