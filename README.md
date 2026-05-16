@@ -1,6 +1,6 @@
-# 🚀 Jenkins Shared Library CI/CD Project
+# Jenkins Shared Library CI/CD Project
 
-## 📌 Overview
+## Overview
 
 This project demonstrates a complete CI/CD workflow using �entity["software","Jenkins","CI/CD automation server"] Shared Libraries for multiple Spring Boot applications.
 
@@ -10,7 +10,7 @@ The same shared library is used to build, package, dockerize, push, and deploy *
 
 ---
 
-# 🏗️ Architecture
+# Architecture
 
 ```text
                     +--------------------------+
@@ -30,7 +30,7 @@ Each application contains only a lightweight `Jenkinsfile` that calls the shared
 
 ---
 
-# ⚙️ Technologies Used
+# Technologies Used
 
 * Java 17
 * Spring Boot
@@ -43,7 +43,7 @@ Each application contains only a lightweight `Jenkinsfile` that calls the shared
 
 ---
 
-# 📂 Shared Library Structure
+# Shared Library Structure
 
 ```text
 shared-lib/
@@ -56,87 +56,25 @@ shared-lib/
 
 ---
 
-# 🔥 Shared Pipeline Responsibilities
+# Shared Pipeline Responsibilities
 
 The shared library handles:
 
-✅ Cloning source code
+ Cloning source code
 
-✅ Building Maven projects
+ Building Maven projects
 
-✅ Creating Docker images
+ Creating Docker images
 
-✅ Tagging Docker images
+ Tagging Docker images
 
-✅ Pushing images to Docker Hub
+ Pushing images to Docker Hub
 
-✅ Deploying containers automatically
-
----
-
-# 🧠 Shared Library Example
-
-```groovy
-buildApp(
-
-    PORT: '8071',
-
-    REPO_URL: 'https://github.com/example/app',
-
-    IMAGE_NAME: 'app',
-
-    IMAGE_TAG: 'v1',
-
-    REPO_NAME: 'saif/api',
-
-    CONTAINER_NAME: 'petclinic-container'
-)
-```
+ Deploying containers automatically
 
 ---
 
-# 📄 Example Jenkinsfile
-
-Each application uses a minimal Jenkinsfile:
-
-```groovy
-@Library('shared-lib@main') _
-
-buildApp(
-
-    PORT: '8071',
-
-    REPO_URL: 'https://github.com/example/app',
-
-    IMAGE_NAME: 'app',
-
-    IMAGE_TAG: 'v1',
-
-    REPO_NAME: 'saif/api',
-
-    CONTAINER_NAME: 'petclinic-container'
-)
-```
-
----
-
-# 🐳 Dockerfile Example
-
-```dockerfile
-FROM eclipse-temurin:17-jre
-
-WORKDIR /app
-
-COPY target/*.jar app.jar
-
-EXPOSE 8080
-
-ENTRYPOINT ["java", "-jar", "app.jar"]
-```
-
----
-
-# 🐳 Docker Workflow
+# Docker Workflow
 
 ```text
 docker build
@@ -145,15 +83,9 @@ docker push
 docker run
 ```
 
-Example image:
 
-```text
-saif/api:v1
-```
 
----
-
-# ☁️ Infrastructure Provisioning
+# Infrastructure Provisioning
 
 Terraform provisions:
 
@@ -165,7 +97,7 @@ Terraform provisions:
 
 ---
 
-# 🔐 Jenkins Configuration
+#  Jenkins Configuration
 
 ## Required Tools
 
@@ -183,7 +115,7 @@ Manage Jenkins → Tools → JDK Installations
 
 ---
 
-# 🔑 Required Credentials
+# Required Credentials
 
 ## Docker Hub Credentials
 
@@ -207,7 +139,7 @@ docker-cred
 
 ---
 
-# 🖥️ Jenkins Agent Configuration
+# Jenkins Agent Configuration
 
 The Jenkins agent connects using SSH.
 
@@ -219,7 +151,7 @@ Example remote root directory:
 
 ---
 
-# 📋 Pipeline Stages
+# Pipeline Stages
 
 ```text
 Clone
@@ -229,19 +161,3 @@ Push Image
 Deploy
 ```
 
----
-
-# 🚀 Future Improvements
-
-* Kubernetes deployment
-* Helm charts
-* SonarQube integration
-* Multi-environment deployment
-* Automated rollback
-* Slack notifications
-
----
-
-# 👨‍💻 Author
-
-Developed by �entity["people","سيف عمران","Saif Omran"]
