@@ -22,7 +22,7 @@ The same shared library is used to build, package, dockerize, push, and deploy *
         |                        |                        |
         v                        v                        v
 
-   Spring Service A            Spring Service B            Spring Service C
+   Spring Service A        Spring Service B        Spring Service C
     Jenkinsfile             Jenkinsfile             Jenkinsfile
 ```
 
