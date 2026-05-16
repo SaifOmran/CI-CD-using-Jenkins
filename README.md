@@ -56,7 +56,7 @@ Each service contains only a lightweight `Jenkinsfile` that calls the shared lib
 * Docker
 * Jenkins Shared Library
 * Docker Hub
-* AWS EC2
+* AWS
 * Terraform
 
 ---
